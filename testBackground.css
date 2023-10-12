@@ -1,0 +1,172 @@
+body {
+  overflow-x: hidden;
+  font-family: sans-serif;
+  color: #505962;
+}
+
+.navbar {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 0.9rem;
+  letter-spacing: 0.1rem;
+  padding: 30px 80px;
+  transition: 0.6s;
+}
+.sticky {
+  padding: 20px 60px;
+  background: rgba(0, 0, 0, 0.6) !important;
+  transition: 0.6s;
+}
+.navbar-brand {
+  text-shadow: 0.1rem 0.1rem 0.8rem black;
+  font-family: "Luckiest Guy", cursive;
+  /* font-family: "Poppins", sans-serif; */
+}
+
+.navbar-brand img {
+  height: 2rem;
+  width: 70px;
+}
+
+.navbar-nav li {
+  padding-right: 0.7rem;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: white;
+  padding-top: 0.8rem;
+}
+
+.navbar-dark .navbar-nav .nav-link.active,
+.navbar-dark .navbar-nav .nav-link:hover {
+  color: #1ebba3;
+}
+
+.inner {
+  min-height: 100vh;
+}
+
+.caption {
+  display: block;
+  min-height: 100vh;
+  color: white;
+  /* top: 38%; */
+  /* background-position: center; */
+  background: url(picture/pexels.jpg) fixed 100%;
+  text-transform: uppercase;
+  background-size: cover;
+}
+
+.caption h1 {
+  font-size: 3.8rem;
+  font-weight: 700;
+  letter-spacing: 0.3rem;
+  text-shadow: 0.1rem 0.1rem 0.8rem black;
+  padding-bottom: 1.6rem;
+}
+
+.caption h3 {
+  font-size: 2rem;
+  text-shadow: 0.1rem 0.1rem 0.5rem black;
+  padding-bottom: 1.6rem;
+}
+
+.btn-lg {
+  border-width: medium;
+  border-radius: 27px;
+  padding: 0.6rem 1.3rem;
+  font-size: 1.1;
+}
+
+.parallax {
+  color: rgb(35, 13, 231);
+  min-height: 100vh;
+  background-position: center;
+  background: url("picture/background.jfif") fixed 100%;
+}
+
+/* .parallax-inner>h1 {
+    font-size: 90px;
+    font-family: 'Audiowide', cursive;
+    font-weight: 700;
+    background-clip: text;
+    -webkit-background-clip: text;
+    background: linear-gradient(45deg, red, blue);
+    /* color: transparent; */
+
+/* text-shadow: .1rem .1rem .8rem black; 
+} */
+
+.transper1 {
+  font-family: "Audiowide", cursive;
+  font-size: 6em;
+  font-weight: bold;
+  line-height: 1;
+  text-transform: uppercase;
+  position: relative;
+  text-align: center;
+  color: #fff;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.transper1:before,
+.transper1:after {
+  position: absolute;
+  content: "";
+}
+
+.transper1:before {
+  z-index: -2;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: inherit;
+}
+
+.transper1:after {
+  position: absolute;
+  z-index: -1;
+  top: 0.125em;
+  right: 0.125em;
+  bottom: 0.125em;
+  left: 0.125em;
+  background: #fff;
+}
+
+.transper1 {
+  color: #fff;
+  background-image: url(https://picsum.photos/480/200?grayscale);
+}
+
+.offset {
+  text-shadow: 0.1rem 0.1rem 0.8rem black;
+  color: white;
+  background: linear-gradient(45deg, red, blue);
+  min-height: 100vh;
+}
+
+footer {
+  background: linear-gradient(
+      217deg,
+      rgba(255, 0, 0, 0.8),
+      rgba(255, 0, 0, 0) 70.71%
+    ),
+    linear-gradient(127deg, rgba(0, 255, 0, 0.8), rgba(0, 255, 0, 0) 70.71%),
+    linear-gradient(336deg, rgba(0, 0, 255, 0.8), rgba(0, 0, 255, 0) 70.71%);
+  color: white;
+}
+
+img {
+  width: 90px;
+  height: 90px;
+}
+
+.scroll-line {
+  height: 4px;
+  background: #ff1493;
+  margin-bottom: -3px;
+  width: 0%;
+  z-index: 1000;
+}
