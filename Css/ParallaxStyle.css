@@ -80,10 +80,11 @@ body {
 }
 
 .parallax {
-  color: rgb(35, 13, 231);
+  /* color: rgb(35, 13, 231); */
+  color: #1ebba3;
   min-height: 100vh;
   background-position: center;
-  background: url("picture/background.jfif") fixed 100%;
+  background: url("picture/pexels-pixabay-531880.jpg") fixed 100%;
 }
 
 /* .parallax-inner>h1 {
