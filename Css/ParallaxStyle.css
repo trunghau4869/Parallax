@@ -304,3 +304,16 @@ img {
     transform: translate(-100%);
   }
 }
+@media (max-width: 992px) {
+  .navbar {
+    padding: 15px;
+  }
+}
+@media (max-width: 768px) {
+  .transper1 {
+    font-size: 2em;
+  }
+  .navbar {
+    padding: 15px;
+  }
+}
