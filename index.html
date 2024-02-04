@@ -23,14 +23,31 @@
     rel="stylesheet" />
   <!-- Icon -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
-
   <!-- CSS-->
-
   <link rel="stylesheet" href="Css/ParallaxStyle.css" />
+
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <title>Document</title>
 </head>
 
 <body>
+
+  <!-- <marquee direction="right" width="100%" height="40" behavior="scroll" bgcolor="pink" scrollamount="30"
+      style="background: #000;color: #fff;text-transform: uppercase;display: flex;justify-content: center;align-items: center;">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. In dolor, qui facere blanditiis totam eius magnam.
+      Quisquam</marquee> -->
+
+  <div class="marquee">
+    <div class="track">
+      <div class="content-marquee">&nbsp;Welcome to pennywise's parallax .The parallax effect has been around for years
+        in
+        classic video games,
+        but it became a trend in the web design world.This cool effect is now commonly seen as part of the scrolling
+        feature of a web page.
+        It uses multiple backgrounds which seem to move at different speeds to create a sensation of depth
+        (creating a faux-3D effect) and an interesting browsing experience.</div>
+    </div>
+  </div>
   <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
     <div class="container-fluid">
       <a class="navbar-brand" href="#">PennyWise</a>
@@ -44,9 +61,11 @@
             <a class="nav-link active" aria-current="page" href="#" id="elmHome"
               onclick="myFunction('elmHome')">Home</a>
           </li>
-
           <li class="nav-item">
             <a class="nav-link" href="#resources" id="elmResources" onclick="myFunction('elmResources')">resources</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#proview" id="elmProview" onclick="myFunction('elmProview')">proview</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#features" id="elmFeatures" onclick="myFunction('elmFeatures')">Features</a>
@@ -71,102 +90,165 @@
           </li>
         </ul>
       </div>
+
+
     </div>
+
     <div class="scroll-line"></div>
+
   </nav>
 
   <div class="caption d-flex justify-content-center align-items-center">
-    <div>
-      <h1 class="d-flex justify-content-center">Welcome</h1>
-      <h3 class="d-flex justify-content-center">Pennywise Academy</h3>
-      <a class="btn btn-outline-light btn-lg d-flex justify-content-center" href="#course">Get Started</a>
-    </div>
+    <section>
+      <div>
+        <h1 class="d-flex justify-content-center" data-aos="slide-down" data-aos-duration="1000" data-aos-delay="0">
+          Welcome</h1>
+        <h3 class="d-flex justify-content-center" data-aos="slide-up" data-aos-duration="1000" data-aos-delay="0">
+          Pennywise Academy</h3>
+        <a class="btn btn-outline-light btn-lg d-flex justify-content-center" href="#course">Get Started</a>
+      </div>
+    </section>
   </div>
 
   <div id="resources" class="offset d-flex justify-content-center align-items-center">
-    <div class="fixed fixed-background">
-      <div class="row dark text-center">
-        <div class="col-12">
-          <h1 class="heading">Built With Care</h1>
-          <div class="heading-underline"></div>
-        </div>
-        <div class="col-md-4">
-          <h3>HTML 5</h3>
-          <div class="feature">
-            <i class="fas fa-code fa-3x"></i>
-          </div>
-          <p class="lead">Built with the latest, HTML 5</p>
-        </div>
-
-        <div class="col-md-4">
-          <h3>BOOTSTRAP 5</h3>
-          <div class="feature">
-            <i class="fas fa-bold fa-3x"></i>
-          </div>
-          <p class="lead">Built with the latest, HTML 5</p>
-        </div>
-
-        <div class="col-md-4">
-          <h3>CSS 3</h3>
-          <div class="feature">
-            <i class="fab fa-css3 fa-3x"></i>
-          </div>
-          <p class="lead">Built with the latest, HTML 5</p>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="margin" id="features"></div>
-  <section class="parallax text-center d-flex justify-content-center align-items-center">
-    <div class="parallax-inner">
-      <h1 class="transper1 transper2">PARALLAX</h1>
-      <div class="jumbotron light">
-        <div class="narrow text-center">
+    <section>
+      <div class="fixed fixed-background">
+        <div class="row dark text-center">
           <div class="col-12">
-            <h3 class="heading">Features</h3>
+            <h1 class="heading">Built With Care</h1>
             <div class="heading-underline"></div>
           </div>
-          <div class="row text-center">
-            <div class="col-md-4">
-              <div class="feature">
-                <i class="fas fa-play-circle fa-4x"></i>
-                <h3>Custom Animation</h3>
-                <p>
-                  Learn Bootstrap by creating an advanced Bootstrap 4
-                  Responsive Website Template from scratch,with no steps
-                  skipped!
-                </p>
-              </div>
+          <div class="col-md-4" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="0">
+            <h3>HTML 5</h3>
+            <div class="feature">
+              <i class="fas fa-code fa-3x"></i>
             </div>
-            <div class="col-md-4">
-              <div class="feature">
-                <i class="fas fa-sliders-h fa-4x"></i>
-                <h3>Custom Animation</h3>
-                <p>
-                  Learn Bootstrap by creating an advanced Bootstrap 4
-                  Responsive Website Template from scratch,with no steps
-                  skipped!
-                </p>
-              </div>
+            <p class="lead">Built with the latest, HTML 5</p>
+          </div>
+
+          <div class="col-md-4" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0">
+            <h3>BOOTSTRAP 5</h3>
+            <div class="feature">
+              <i class="fas fa-bold fa-3x"></i>
             </div>
-            <div class="col-md-4">
-              <div class="feature">
-                <i class="fab fa-wpforms fa-4x"></i>
-                <h3>Custom Animation</h3>
-                <p>
-                  Learn Bootstrap by creating an advanced Bootstrap 4
-                  Responsive Website Template from scratch,with no steps
-                  skipped!
-                </p>
+            <p class="lead">Built with the latest, HTML 5</p>
+          </div>
+
+          <div class="col-md-4" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="0">
+            <h3>CSS 3</h3>
+            <div class="feature">
+              <i class="fab fa-css3 fa-3x"></i>
+            </div>
+            <p class="lead">Built with the latest, HTML 5</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+  <div id="proview">
+    <section>
+      <div class="slice">
+        <div class="content">
+          <h2>Slice One</h2>
+          <p>
+            Toi ten la Nguyen Trung Hau , 21 tuoi ,dang theo hoc tai DH Duy Tan
+            ,Khoa Cong nghe thông tin,Chuyen nganh Cong nghe phan mem,la sinh vien nam 3
+          </p>
+          <a href="#" class="link-proview">Details<i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+      <div class="slice">
+        <div class="content">
+          <h2>Slice Two</h2>
+          <p>
+            Toi ten la Nguyen Trung Hau , 21 tuoi ,dang theo hoc tai DH Duy Tan
+            ,Khoa Cong nghe thông tin,Chuyen nganh Cong nghe phan mem,la sinh vien nam 3
+          </p>
+          <a href="#" class="link-proview">Details<i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+      <div class="slice">
+        <div class="content">
+          <h2>Slice Three</h2>
+          <p>
+            Toi ten la Nguyen Trung Hau , 21 tuoi ,dang theo hoc tai DH Duy Tan
+            ,Khoa Cong nghe thông tin,Chuyen nganh Cong nghe phan mem,la sinh vien nam 3
+          </p>
+          <a href="#" class="link-proview">Details<i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+      <div class="slice">
+        <div class="content">
+          <h2>Slice Four</h2>
+          <p>
+            Toi ten la Nguyen Trung Hau , 21 tuoi ,dang theo hoc tai DH Duy Tan
+            ,Khoa Cong nghe thông tin,Chuyen nganh Cong nghe phan mem,la sinh vien nam 3
+          </p>
+          <a href="#" class="link-proview">Details<i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+      <div class="slice">
+        <div class="content">
+          <h2>Slice Five</h2>
+          <p>
+            Toi ten la Nguyen Trung Hau , 21 tuoi ,dang theo hoc tai DH Duy Tan
+            ,Khoa Cong nghe thông tin,Chuyen nganh Cong nghe phan mem,la sinh vien nam 3
+          </p>
+          <a href="#" class="link-proview">Details<i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+    </section>
+  </div>
+  <div id="features">
+    <section class="parallax text-center d-flex justify-content-center align-items-center">
+      <div class="parallax-inner">
+        <h1 class="transper1 transper2">PARALLAX</h1>
+        <div class="jumbotron light">
+          <div class="narrow text-center">
+            <div class="col-12">
+              <h3 class="heading">Features</h3>
+              <div class="heading-underline"></div>
+            </div>
+            <div class="row text-center">
+              <div class="col-md-4">
+                <div class="feature">
+                  <i class="fas fa-play-circle fa-4x"></i>
+                  <h3>Custom Animation</h3>
+                  <p>
+                    Learn Bootstrap by creating an advanced Bootstrap 4
+                    Responsive Website Template from scratch,with no steps
+                    skipped!
+                  </p>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="feature">
+                  <i class="fas fa-sliders-h fa-4x"></i>
+                  <h3>Custom Animation</h3>
+                  <p>
+                    Learn Bootstrap by creating an advanced Bootstrap 4
+                    Responsive Website Template from scratch,with no steps
+                    skipped!
+                  </p>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="feature">
+                  <i class="fab fa-wpforms fa-4x"></i>
+                  <h3>Custom Animation</h3>
+                  <p>
+                    Learn Bootstrap by creating an advanced Bootstrap 4
+                    Responsive Website Template from scratch,with no steps
+                    skipped!
+                  </p>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
-
+    </section>
+  </div>
   <footer>
     <div class="row justify-content-center text-center">
       <div class="col-md-5">
@@ -196,7 +278,7 @@
     </script> -->
   <script type="text/javascript">
     function myFunction(id) {
-      let arr = ["elmHome", "elmResources", "elmFeatures"];
+      let arr = ["elmHome", "elmProview", "elmResources", "elmFeatures"];
       for (let i = 0; i < arr.length; i++) {
         let value = document.getElementById(arr[i]).className;
         let hasClassMain = document.getElementById(arr[i]).classList.contains("active");
@@ -210,6 +292,10 @@
       var header = document.querySelector("nav");
       header.classList.toggle("sticky", window.scrollY > 0);
     });
+  </script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
   </script>
 </body>
 
