@@ -179,7 +179,7 @@ body {
   color: #1ebba3;
   min-height: 100vh;
   background-position: center;
-  background: url(picture/pexels-pixabay-531880.jpg) fixed 100%;
+  background: url(Picture/pexels-pixabay-531880.jpg) fixed 100%;
 }
 
 /* .parallax-inner>h1 {
