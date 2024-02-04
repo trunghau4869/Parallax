@@ -96,26 +96,26 @@ body {
 }
 
 #proview section .slice:nth-child(1) {
-  background: url("picture/picture5.jpg");
+  background: url(Picture/picture1.jpg);
 }
 
 #proview section .slice:nth-child(2) {
-  background: url("picture/picture1.jpg");
+  background: url(Picture/picture2.jpg);
   background-position: center;
 }
 
 #proview section .slice:nth-child(3) {
-  background: url("picture/picture2.jpg");
+  background: url(Picture/picture3.jpg);
   background-position: center;
 }
 
 #proview section .slice:nth-child(4) {
-  background: url("picture/picture3.jpg");
+  background: url(Picture/picture4.jpg);
   background-position: center;
 }
 
 #proview section .slice:nth-child(5) {
-  background: url("picture/picture4.jpg");
+  background: url(Picture/picture5.jpg);
   background-position: center;
 }
 
@@ -179,7 +179,7 @@ body {
   color: #1ebba3;
   min-height: 100vh;
   background-position: center;
-  background: url("picture/pexels-pixabay-531880.jpg") fixed 100%;
+  background: url(picture/pexels-pixabay-531880.jpg) fixed 100%;
 }
 
 /* .parallax-inner>h1 {
